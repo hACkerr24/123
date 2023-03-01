@@ -24,9 +24,9 @@
 		
 		/* Slideshow container */
 		.slideshow-container {
-		  max-width: 1000px;
+		  max-width: 100%;
 		  position: relative;
-		  margin: 150px 300px 100px;
+		  margin: 100px 300px 100px;
 		}
 		/* The dots/bullets/indicators */
 		.dot {
@@ -55,21 +55,16 @@
 		}
 		
 		/* On smaller screens, decrease text size */
-        /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 480px) and (max-width: 767px) {
-            .slideshow-container {
-                max-width: 50px;
-		        position: middle;
-		        margin: 50px 30px 10px;
-            }
-        }
+		@media only screen and (max-width: 300px) {
+		  .slideshow-container {margin: 0%;}
+		}
 		</style>
 		</head>
 		<body>
 		<div class="slideshow-container">
 		<div class="mySlides fade">
 		  <div class="numbertext"></div>
-		  <img src="images\Pic1.jpg" style="width:100%">
+		  <img src="images\Pic1.jpg" width="100%">
 		  <div class="text"></div>
 		</div>
 		<div class="mySlides fade">
@@ -142,7 +137,7 @@
 			<h2>About <span>Us</span></h2><br>
 			<p>K.K. IMPEX is a Jaipur based trusted firm that is engaged in the supplying of a variety of industrial fasteners and fittings. The array of products that we offer includes Brad Nails , Staples , U Pins , D-Nuts , T-Nuts , Insert Nuts , Drywall Screws , Chipboard Screws , Truss Head Screws , Alloy Steel Bolts etc. Our company is progressing at a fast pace since its commencement in the year 2008. We are continuing to flourish at a constant rate under the efficient guidance of our worthy Proprietor , Mr. Darshan Khandelwal. We are known to be one of the principal Metal Screws Suppliers in India .
 			</p>
-			<a href="contact" class="btn">More About</a>
+			<a href="#contact" class="btn">More About</a>
 		</div>
 	</section>
 
