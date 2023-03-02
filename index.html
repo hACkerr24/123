@@ -24,9 +24,9 @@
 		
 		/* Slideshow container */
 		.slideshow-container {
-		  max-width: 400px;
+		  max-width: 100%;
 		  position: relative;
-		  margin: 150px 200px;
+		  margin: 150px 300px 100px;
 		}
 		/* The dots/bullets/indicators */
 		.dot {
@@ -56,7 +56,7 @@
 		
 		/* On smaller screens, decrease text size */
 		@media only screen and (max-width: 300px) {
-		  .slideshow-container {margin: 10px 30px 5px;}
+		  .slideshow-container {max-width: 100%}
 		}
 		</style>
 		</head>
@@ -64,12 +64,28 @@
 		<div class="slideshow-container">
 		<div class="mySlides fade">
 		  <div class="numbertext"></div>
-		  <img src="images\Pic1.jpg" width="150%">
+		  <img src="images\Pic1.jpg" style="width:100%">
 		  <div class="text"></div>
 		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext"></div>
+		  <img src="images\Pic2.jpg" style="width:100%">
+		  <div class="text"></div>
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext"></div>
+		  <img src="images\Pic3.jpg" style="width:100%">
+		  <div class="text"></div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext"></div>
+			<img src="images\Pic4.jpg" style="width:100%">
+			<div class="text"></div>
 		  </div>
 		</div>
 		<br>
+		
+		
 		<script>
 		let slideIndex = 0;
 		showSlides();
@@ -94,7 +110,7 @@
 <header>
 	<a href="#" class="logo">KK<span> IM</span>PEX</a>
 	<ul class="navlist">
-		<li><a href="#" >Home</a></li>
+		<li><a href="#home" >Home</a></li>
 		<li><a href="#about">About Us</a></li>
 		<li><a href="#services">Services</a></li>
 		<li><a href="#products">Products</a></li>
